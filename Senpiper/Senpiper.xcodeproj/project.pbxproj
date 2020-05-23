@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B655C0D2477EF8800F7A310 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B655C0C2477EF8800F7A310 /* AppDelegate.swift */; };
+		2B655C0F2477EF8800F7A310 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B655C0E2477EF8800F7A310 /* SceneDelegate.swift */; };
+		2B655C112477EF8800F7A310 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B655C102477EF8800F7A310 /* ViewController.swift */; };
+		2B655C142477EF8800F7A310 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B655C122477EF8800F7A310 /* Main.storyboard */; };
+		2B655C162477EF8C00F7A310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B655C152477EF8C00F7A310 /* Assets.xcassets */; };
+		2B655C192477EF8C00F7A310 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B655C172477EF8C00F7A310 /* LaunchScreen.storyboard */; };
+		2B655C242477EF8C00F7A310 /* SenpiperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B655C232477EF8C00F7A310 /* SenpiperTests.swift */; };
+		2B655C2F2477EF8C00F7A310 /* SenpiperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B655C2E2477EF8C00F7A310 /* SenpiperUITests.swift */; };
+		2BE10DDB24792A22006BE0E4 /* ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE10DDA24792A22006BE0E4 /* ImageViewExtensions.swift */; };
+		2BE10DDD24792CFB006BE0E4 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE10DDC24792CFB006BE0E4 /* UsersViewController.swift */; };
+		2BE10DDF24793B07006BE0E4 /* correct-check-animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2BE10DDE24793B07006BE0E4 /* correct-check-animation.gif */; };
+		2BE10DE124793F1E006BE0E4 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE10DE024793F1E006BE0E4 /* WebService.swift */; };
+		A51ECA2111BE81A3B6FD16BB /* libPods-Senpiper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 432E3650909C023BE63902B8 /* libPods-Senpiper.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B655C202477EF8C00F7A310 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B655C012477EF8800F7A310 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B655C082477EF8800F7A310;
+			remoteInfo = Senpiper;
+		};
+		2B655C2B2477EF8C00F7A310 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B655C012477EF8800F7A310 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B655C082477EF8800F7A310;
+			remoteInfo = Senpiper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B655C092477EF8800F7A310 /* Senpiper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Senpiper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B655C0C2477EF8800F7A310 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B655C0E2477EF8800F7A310 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2B655C102477EF8800F7A310 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B655C132477EF8800F7A310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B655C152477EF8C00F7A310 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B655C182477EF8C00F7A310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B655C1A2477EF8C00F7A310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B655C1F2477EF8C00F7A310 /* SenpiperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SenpiperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B655C232477EF8C00F7A310 /* SenpiperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenpiperTests.swift; sourceTree = "<group>"; };
+		2B655C252477EF8C00F7A310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B655C2A2477EF8C00F7A310 /* SenpiperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SenpiperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B655C2E2477EF8C00F7A310 /* SenpiperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenpiperUITests.swift; sourceTree = "<group>"; };
+		2B655C302477EF8C00F7A310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BE10DDA24792A22006BE0E4 /* ImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtensions.swift; sourceTree = "<group>"; };
+		2BE10DDC24792CFB006BE0E4 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		2BE10DDE24793B07006BE0E4 /* correct-check-animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "correct-check-animation.gif"; sourceTree = "<group>"; };
+		2BE10DE024793F1E006BE0E4 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		2FFEEF6D9F79EB33D221668C /* Pods-Senpiper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Senpiper.debug.xcconfig"; path = "Target Support Files/Pods-Senpiper/Pods-Senpiper.debug.xcconfig"; sourceTree = "<group>"; };
+		432E3650909C023BE63902B8 /* libPods-Senpiper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Senpiper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		842C74F28874505A1BE4AB61 /* Pods-Senpiper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Senpiper.release.xcconfig"; path = "Target Support Files/Pods-Senpiper/Pods-Senpiper.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B655C062477EF8800F7A310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51ECA2111BE81A3B6FD16BB /* libPods-Senpiper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B655C1C2477EF8C00F7A310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B655C272477EF8C00F7A310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B655C002477EF8800F7A310 = {
+			isa = PBXGroup;
+			children = (
+				2B655C0B2477EF8800F7A310 /* Senpiper */,
+				2B655C222477EF8C00F7A310 /* SenpiperTests */,
+				2B655C2D2477EF8C00F7A310 /* SenpiperUITests */,
+				2B655C0A2477EF8800F7A310 /* Products */,
+				6CED72B14643A0651CDACE73 /* Pods */,
+				2D060CBFFC77124CFE0EF99B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2B655C0A2477EF8800F7A310 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B655C092477EF8800F7A310 /* Senpiper.app */,
+				2B655C1F2477EF8C00F7A310 /* SenpiperTests.xctest */,
+				2B655C2A2477EF8C00F7A310 /* SenpiperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B655C0B2477EF8800F7A310 /* Senpiper */ = {
+			isa = PBXGroup;
+			children = (
+				2B655C0C2477EF8800F7A310 /* AppDelegate.swift */,
+				2B655C0E2477EF8800F7A310 /* SceneDelegate.swift */,
+				2B655C102477EF8800F7A310 /* ViewController.swift */,
+				2BE10DDE24793B07006BE0E4 /* correct-check-animation.gif */,
+				2B655C122477EF8800F7A310 /* Main.storyboard */,
+				2B655C152477EF8C00F7A310 /* Assets.xcassets */,
+				2B655C172477EF8C00F7A310 /* LaunchScreen.storyboard */,
+				2BE10DE024793F1E006BE0E4 /* WebService.swift */,
+				2B655C1A2477EF8C00F7A310 /* Info.plist */,
+				2BE10DDA24792A22006BE0E4 /* ImageViewExtensions.swift */,
+				2BE10DDC24792CFB006BE0E4 /* UsersViewController.swift */,
+			);
+			path = Senpiper;
+			sourceTree = "<group>";
+		};
+		2B655C222477EF8C00F7A310 /* SenpiperTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B655C232477EF8C00F7A310 /* SenpiperTests.swift */,
+				2B655C252477EF8C00F7A310 /* Info.plist */,
+			);
+			path = SenpiperTests;
+			sourceTree = "<group>";
+		};
+		2B655C2D2477EF8C00F7A310 /* SenpiperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B655C2E2477EF8C00F7A310 /* SenpiperUITests.swift */,
+				2B655C302477EF8C00F7A310 /* Info.plist */,
+			);
+			path = SenpiperUITests;
+			sourceTree = "<group>";
+		};
+		2D060CBFFC77124CFE0EF99B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				432E3650909C023BE63902B8 /* libPods-Senpiper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CED72B14643A0651CDACE73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FFEEF6D9F79EB33D221668C /* Pods-Senpiper.debug.xcconfig */,
+				842C74F28874505A1BE4AB61 /* Pods-Senpiper.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B655C082477EF8800F7A310 /* Senpiper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B655C332477EF8C00F7A310 /* Build configuration list for PBXNativeTarget "Senpiper" */;
+			buildPhases = (
+				F8F054390B90DEDFF9395B29 /* [CP] Check Pods Manifest.lock */,
+				2B655C052477EF8800F7A310 /* Sources */,
+				2B655C062477EF8800F7A310 /* Frameworks */,
+				2B655C072477EF8800F7A310 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Senpiper;
+			productName = Senpiper;
+			productReference = 2B655C092477EF8800F7A310 /* Senpiper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B655C1E2477EF8C00F7A310 /* SenpiperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B655C362477EF8C00F7A310 /* Build configuration list for PBXNativeTarget "SenpiperTests" */;
+			buildPhases = (
+				2B655C1B2477EF8C00F7A310 /* Sources */,
+				2B655C1C2477EF8C00F7A310 /* Frameworks */,
+				2B655C1D2477EF8C00F7A310 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B655C212477EF8C00F7A310 /* PBXTargetDependency */,
+			);
+			name = SenpiperTests;
+			productName = SenpiperTests;
+			productReference = 2B655C1F2477EF8C00F7A310 /* SenpiperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B655C292477EF8C00F7A310 /* SenpiperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B655C392477EF8C00F7A310 /* Build configuration list for PBXNativeTarget "SenpiperUITests" */;
+			buildPhases = (
+				2B655C262477EF8C00F7A310 /* Sources */,
+				2B655C272477EF8C00F7A310 /* Frameworks */,
+				2B655C282477EF8C00F7A310 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B655C2C2477EF8C00F7A310 /* PBXTargetDependency */,
+			);
+			name = SenpiperUITests;
+			productName = SenpiperUITests;
+			productReference = 2B655C2A2477EF8C00F7A310 /* SenpiperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B655C012477EF8800F7A310 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Pavan Kalyan Jonnadula";
+				TargetAttributes = {
+					2B655C082477EF8800F7A310 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					2B655C1E2477EF8C00F7A310 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 2B655C082477EF8800F7A310;
+					};
+					2B655C292477EF8C00F7A310 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 2B655C082477EF8800F7A310;
+					};
+				};
+			};
+			buildConfigurationList = 2B655C042477EF8800F7A310 /* Build configuration list for PBXProject "Senpiper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B655C002477EF8800F7A310;
+			productRefGroup = 2B655C0A2477EF8800F7A310 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B655C082477EF8800F7A310 /* Senpiper */,
+				2B655C1E2477EF8C00F7A310 /* SenpiperTests */,
+				2B655C292477EF8C00F7A310 /* SenpiperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B655C072477EF8800F7A310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B655C192477EF8C00F7A310 /* LaunchScreen.storyboard in Resources */,
+				2B655C162477EF8C00F7A310 /* Assets.xcassets in Resources */,
+				2BE10DDF24793B07006BE0E4 /* correct-check-animation.gif in Resources */,
+				2B655C142477EF8800F7A310 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B655C1D2477EF8C00F7A310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B655C282477EF8C00F7A310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F8F054390B90DEDFF9395B29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Senpiper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B655C052477EF8800F7A310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BE10DE124793F1E006BE0E4 /* WebService.swift in Sources */,
+				2B655C112477EF8800F7A310 /* ViewController.swift in Sources */,
+				2B655C0D2477EF8800F7A310 /* AppDelegate.swift in Sources */,
+				2BE10DDD24792CFB006BE0E4 /* UsersViewController.swift in Sources */,
+				2BE10DDB24792A22006BE0E4 /* ImageViewExtensions.swift in Sources */,
+				2B655C0F2477EF8800F7A310 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B655C1B2477EF8C00F7A310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B655C242477EF8C00F7A310 /* SenpiperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B655C262477EF8C00F7A310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B655C2F2477EF8C00F7A310 /* SenpiperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B655C212477EF8C00F7A310 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B655C082477EF8800F7A310 /* Senpiper */;
+			targetProxy = 2B655C202477EF8C00F7A310 /* PBXContainerItemProxy */;
+		};
+		2B655C2C2477EF8C00F7A310 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B655C082477EF8800F7A310 /* Senpiper */;
+			targetProxy = 2B655C2B2477EF8C00F7A310 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B655C122477EF8800F7A310 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B655C132477EF8800F7A310 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B655C172477EF8C00F7A310 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B655C182477EF8C00F7A310 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B655C312477EF8C00F7A310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B655C322477EF8C00F7A310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B655C342477EF8C00F7A310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FFEEF6D9F79EB33D221668C /* Pods-Senpiper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Senpiper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paone.Senpiper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B655C352477EF8C00F7A310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 842C74F28874505A1BE4AB61 /* Pods-Senpiper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Senpiper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paone.Senpiper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2B655C372477EF8C00F7A310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SenpiperTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paone.SenpiperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Senpiper.app/Senpiper";
+			};
+			name = Debug;
+		};
+		2B655C382477EF8C00F7A310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SenpiperTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paone.SenpiperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Senpiper.app/Senpiper";
+			};
+			name = Release;
+		};
+		2B655C3A2477EF8C00F7A310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SenpiperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paone.SenpiperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Senpiper;
+			};
+			name = Debug;
+		};
+		2B655C3B2477EF8C00F7A310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SenpiperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paone.SenpiperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Senpiper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B655C042477EF8800F7A310 /* Build configuration list for PBXProject "Senpiper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B655C312477EF8C00F7A310 /* Debug */,
+				2B655C322477EF8C00F7A310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B655C332477EF8C00F7A310 /* Build configuration list for PBXNativeTarget "Senpiper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B655C342477EF8C00F7A310 /* Debug */,
+				2B655C352477EF8C00F7A310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B655C362477EF8C00F7A310 /* Build configuration list for PBXNativeTarget "SenpiperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B655C372477EF8C00F7A310 /* Debug */,
+				2B655C382477EF8C00F7A310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B655C392477EF8C00F7A310 /* Build configuration list for PBXNativeTarget "SenpiperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B655C3A2477EF8C00F7A310 /* Debug */,
+				2B655C3B2477EF8C00F7A310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B655C012477EF8800F7A310 /* Project object */;
+}
