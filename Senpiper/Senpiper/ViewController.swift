@@ -8,14 +8,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var pwdTextField: UITextField!
     @IBOutlet weak var loginView: UIView!
     @IBOutlet weak var emailTextField: UITextField!
+    @IBAction func secureTextAction(_ sender: Any) {
+        if pwdTextField.isSecureTextEntry{
+            pwdTextField.isSecureTextEntry = false
+        }
+        else{
+            pwdTextField.isSecureTextEntry = true
+
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         setPropetsToVeiw()
+        emailTextField.delegate = self
+        pwdTextField.delegate = self
     }
     func setPropetsToVeiw(){
         loginView.layer.shadowColor = UIColor.black.cgColor
@@ -28,6 +39,10 @@ class ViewController: UIViewController {
         pwdTextField.text = "Abc00011"
         emailTextField.text = "abc@xyz.text"
         
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     func viewSlideInFromLeftToRight(views: UIView) {
         var transition: CATransition? = nil

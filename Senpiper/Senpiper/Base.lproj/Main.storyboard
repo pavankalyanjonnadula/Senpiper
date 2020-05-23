@@ -21,7 +21,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="component (1)" translatesAutoresizingMaskIntoConstraints="NO" id="Uci-KX-UKM">
                                 <rect key="frame" x="0.0" y="66" width="375" height="334.5"/>
                             </imageView>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7T-b6-MUG">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7T-b6-MUG">
                                 <rect key="frame" x="30" y="128.5" width="315" height="410"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organization LOGO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IT-rr-UyV">
@@ -42,13 +42,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zta-cX-xCp">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zta-cX-xCp">
                                         <rect key="frame" x="20" y="130" width="275" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="ybM-kZ-Cia"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZK3-JL-zVI">
                                         <rect key="frame" x="20" y="185" width="275" height="35"/>
@@ -56,7 +56,7 @@
                                             <constraint firstAttribute="height" constant="35" id="etK-Hd-Xwc"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYW-L4-Mse">
                                         <rect key="frame" x="179.5" y="230" width="115.5" height="20"/>
@@ -102,6 +102,18 @@
                                         <color key="textColor" red="0.91766363380000004" green="0.2980661094" blue="0.53720134500000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOu-ft-VPN">
+                                        <rect key="frame" x="260" y="195" width="25" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="qWe-9U-YTs"/>
+                                            <constraint firstAttribute="width" constant="25" id="yzs-mI-xVZ"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.91764705879999997" green="0.29803921570000003" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="eye.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="secureTextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sQn-yd-6lz"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -111,9 +123,11 @@
                                     <constraint firstItem="7IT-rr-UyV" firstAttribute="leading" secondItem="s7T-b6-MUG" secondAttribute="leading" constant="20" id="8Zd-6b-vzn"/>
                                     <constraint firstAttribute="trailing" secondItem="LbF-M6-lF6" secondAttribute="trailing" id="9hC-iG-OqN"/>
                                     <constraint firstItem="7IT-rr-UyV" firstAttribute="top" secondItem="s7T-b6-MUG" secondAttribute="top" constant="20" id="9jR-jU-9uB"/>
+                                    <constraint firstItem="VOu-ft-VPN" firstAttribute="centerY" secondItem="ZK3-JL-zVI" secondAttribute="centerY" id="CRh-kM-JLG"/>
                                     <constraint firstAttribute="bottom" secondItem="LbF-M6-lF6" secondAttribute="bottom" constant="15" id="QY9-hQ-Exa"/>
                                     <constraint firstItem="U5g-Wh-iGj" firstAttribute="leading" secondItem="s7T-b6-MUG" secondAttribute="leading" constant="20" id="V42-0s-ute"/>
                                     <constraint firstItem="hjC-2P-5Xy" firstAttribute="top" secondItem="U5g-Wh-iGj" secondAttribute="bottom" constant="20" id="ZJH-35-IXj"/>
+                                    <constraint firstAttribute="trailing" secondItem="VOu-ft-VPN" secondAttribute="trailing" constant="30" id="bXQ-b9-kNK"/>
                                     <constraint firstItem="U5g-Wh-iGj" firstAttribute="top" secondItem="CYW-L4-Mse" secondAttribute="bottom" constant="20" id="cJN-yJ-pR4"/>
                                     <constraint firstItem="ZK3-JL-zVI" firstAttribute="leading" secondItem="s7T-b6-MUG" secondAttribute="leading" constant="20" id="cgL-DV-UXQ"/>
                                     <constraint firstAttribute="trailing" secondItem="CYW-L4-Mse" secondAttribute="trailing" constant="20" id="cil-sP-dOX"/>
@@ -224,5 +238,6 @@
         <image name="component" width="327" height="277"/>
         <image name="component (1)" width="500" height="556"/>
         <image name="download" width="457" height="152"/>
+        <image name="eye.fill" catalog="system" width="64" height="38"/>
     </resources>
 </document>
